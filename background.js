@@ -17,6 +17,16 @@ function enableInputsInIframe(tab) {
         for (var i = 0; i < selects.length; i++) {
           selects[i].removeAttribute("disabled");
         }
+      } else {
+        var inputs = document.getElementsByTagName("input");
+        var selects = document.getElementsByTagName("select");
+
+        for (var i = 0; i < inputs.length; i++) {
+          inputs[i].removeAttribute("disabled");
+        }
+        for (var i = 0; i < selects.length; i++) {
+          selects[i].removeAttribute("disabled");
+        }
       }
     },
   });
