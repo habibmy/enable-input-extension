@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "Input Enabler",
+  "version": "1.0",
+  "description": "Enable Input in Airtel Router",
+  "action": {},
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": ["activeTab", "tabs", "scripting"]
+}
